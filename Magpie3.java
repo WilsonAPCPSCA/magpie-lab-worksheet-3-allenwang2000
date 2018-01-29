@@ -1,20 +1,5 @@
-/**
- * A program to carry on conversations with a human user.
- * This version: 
- * <ul><li>
- *    Uses advanced search for keywords 
- * </li></ul> 
- *    
- * @author Laurie White
- * @version April 2012
- */
-public class Magpie3
-{
-	/**
-	 * Get a default greeting
-	 * 
-	 * @return a greeting
-	 */
+
+public class Magpie3 {
 	public String getGreeting()
 	{
 		return "Hello, let's talk.";
@@ -44,6 +29,26 @@ public class Magpie3
 				|| findKeyword(statement, "brother") >= 0)
 		{
 			response = "Tell me more about your family.";
+		}
+		else if (findKeyword(statement, "Mrs.") >= 0)
+				{
+			response="She sounds like a swell teacher.";
+				}
+		else if (findKeyword(statement, "Mr") >= 0)
+				{
+			response="She sounds like a swell teacher.";
+				}
+		else if (findKeyword(statement, "school") >= 0)
+				{
+			response = "School is good for you";
+			}
+		else if (findKeyword(statement, "tired") >= 0)
+		    {
+			response = "You should get some rest.";
+		    }
+		else if (findKeyword(statement,"tests")>=0)
+		{
+		response = "I am very good at tests";
 		}
 		else
 		{
